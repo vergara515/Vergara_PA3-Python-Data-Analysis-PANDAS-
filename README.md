@@ -38,23 +38,23 @@ _General Functions used and their descriptions:_
 
 3. **'pd.read_csv('cars.csv)'** - This function is used to read and load the file 'cars.csv'.
 
-_Functions used and their descriptions for Part a wherein the first five rows with odd-numbered columns (columns 1, 3, 5, 7…) of cars is to be displayed:_
+_Functions used and their descriptions for Part **a** wherein the first five rows with odd-numbered columns (columns 1, 3, 5, 7…) of cars is to be displayed:_
 
 4. **'cars.iloc[:5, ::2]'** - This function is used to display the first five rows with odd-numbered columns of cars. It also selects the first five row starting from 0 due to the indicated ':5'. To then get the odd-numbered columns, '::2' is used at it selects every second column.
 
 5. **'cars.head(5).iloc[:, ::2]'** - This function is an alternative way to get the same result. In this case, using '.head(5)' simply just means it is selecting the first 5 rows of the data frame while the '.iloc[:, ::2]' still functions the same of selecting every second column.
 
-_Functions used and their descriptions for Part b wherein the row that contains the ‘Model’ of ‘Mazda RX4’ is displayed:_
+_Functions used and their descriptions for Part **b** wherein the row that contains the ‘Model’ of ‘Mazda RX4’ is displayed:_
 
 6. **'cars[0:1]'** - This function indicates the data frame going to be used is the .csv file stored in variable car as indicated by 'cars[]'. Moreover, the index means the range starts at index 0 and ends before index 1 which will result to the desired output.
 
 7. **'cars.iloc[[0]]'** - This function is an alternate way to display the same result but by using poistional indexing. The '.iloc[]' selects the rows and columns while '[0]' returns the first row but still keeps it in the data frame format.
 
-_Functions used and their descriptions for Part c wherein the amount of cylinders (‘cyl’) of the car model ‘Camaro Z28’ is asked:_
+_Functions used and their descriptions for Part **c** wherein the amount of cylinders (‘cyl’) of the car model ‘Camaro Z28’ is asked:_
 
 8. **'cars.loc[cars['Model'] == 'Camaro Z28', ['Model', 'cyl']]'** - The function uses a boolean series and indexing as conditions were specified to get the output. The expression cars['Model'] == 'Camaro Z28' checks whether the 'Model' column in the data frame contains the value 'Camaro Z28' for each row. On the other hand, the `cars.loc[condition, ['Model', 'cyl']] selects rows and columns based on labels. It uses the provided condition to determine which rows to select and specifies the 'Model' and 'cyl' columns to be included in the output.
 
-_Functions used and their descriptions for Part c wherein the amount of cylinders (‘cyl’) and gear type (‘gear’) on the car models ‘Mazda RX4 Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ is determined:_
+_Functions used and their descriptions for Part **d** wherein the amount of cylinders (‘cyl’) and gear type (‘gear’) on the car models ‘Mazda RX4 Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ is determined:_
 
 9. 'cars.loc[cars['Model'].isin(['Mazda RX4 Wag', 'Ford Pantera L', 'Honda Civic']), ['Model', 'cyl', 'gear']]' - This function uses '.isin()' which returns a boolean series while the modeals inside the parenthesis is the list of 'Model' to be checked. Meanwhile, the 'cars.loc[condition, ['Model', 'cyl', 'gear'] specifies the columns needed to be returned.
 
