@@ -1,4 +1,4 @@
-# Vergara_PA3-Python-Data-Analysis-PANDAS-
+# ECE2112: Experiment 3
 
 This respiratory contains Python codes using PANDAS for the given programming problems. Furthermore, solutions, explanations, and testings for each problem are written here.
 
@@ -65,3 +65,7 @@ _Functions for an alternative way of getting same results as Part d, but with a 
 11. **'cars.loc[cars['Model'].isin(models), ['Model', 'cyl', 'gear']]'** - The variable 'models' is inserted in the '.isin()'
 
 In conclusion, there are many alternate ways to get the desired output of the given problems by the use of subsetting, slicing, and indexing.
+
+___
+
+Author: Revie Shane D. Vergara
